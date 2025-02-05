@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Car Shop</title>
+    <link rel="icon" href="image/img/logo.png">
+    <link rel="stylesheet" href="css/SM_Car_Shop.css">
+    <link rel="stylesheet" href="css/Sport_Car.css">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="img-logo " data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="image/img/logo.png" alt>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i> ទំព័រដើម</a>
+                    </li>
+                    <li class="dropdown-1">
+                        <a href="page/Sport_Car.html">
+                            <i class="fa-solid fa-car"></i> ប្រភេទឡាន</a>
+                        <div class="drop-home">
+                            <a href="page/Sport_Car.html">Sport Car</a>
+                            <a href="page/Super_Car_Shop.html">Super Car</a>
+                            <a href="page/Luxury_Car_Shop.html">Luxury Car</a>
+                            <a href="page/Pickup_Car_Shop.html">Pickup Car</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="page/result_finsih.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            បញ្ជារទិញ</a>
+                    </li>
+                    <li class="dropdown-1">
+                        <a href="page/discount.html">
+                            <i class="fa-solid fa-percent"></i>
+                            បញ្ជុះតម្លៃ</a>
+                        <div class="drop-home">
+                            <a href="page/discount.html">10% off</a>
+                            <a href="page/discount.html">15% off</a>
+                            <a href="page/discount.html">20% off</a>
+                        </div>
+                    </li>
+                    <li class="dropdown-1">
+                        <a href="page/fix.html">
+                            <i class="fa-solid fa-car"></i>
+                            សេវាកម្ម</a>
+                        <div class="drop-home">
+                            <a href="page/car_comfort.html">ជួសជុល</a>
+                            <a href="page/scotch.html">បិទស្កត់</a>
+                            <a href="page/clean_car.html">លាងរថយន្ត</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="page/about_me.html">
+                            <i class="fa-solid fa-user"></i>
+                            អំពីយើង</a>
+                    </li>
+                    <li class="dropdown-1">
+                        <span style="text-align: center;"><a href="#"><i class="fa-solid fa-bars"></i></a></span>
+                        <div class="drop-home">
+                            <a href="page/buy.html">បង្កើតគណនី</a>
+                            <a href="page/account_access.html">ចូលប្រើគណនី</a>
+                            <a href="page/buy.html">ចេញពីគណនី</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search">
+                    <form action method="get">
+                        <label for="search"></label>
+                        <input type="text" id="search" placeholder="ស្វែងរក.........">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="home">
+        <!-- <div class="name-shop ">
+            <p><b>It'a all start with a dream <span style="color: blue;">SM
+                        Car Shop</span></b></p>
+        </div> -->
+        <div class="home-2">
+        </div>
+        <div class="popular-car">
+            <h1 class="animate__animated animate__bounce animate__delay-1s"> ឡានដែលពេញនិយម <span
+                    style="color:blue"></span></h1>
+        </div>
+        <div class="home-1">
+            <div class="drop-home1">
+                <div class="img1-home">
+                    <img src="image/png/A01.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="img1-home">
+                    <img src="image/png/A02.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="img1-home">
+                    <img src="image/png/A03.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+            </div>
+            <div class="drop-home2">
+                <div class="img1-home">
+                    <img src="image/png/A04.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="img1-home">
+                    <img src="image/png/A05.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="img1-home">
+                    <img src="image/png/A06.png" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="herobanner">
+        <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <!-- Sport Car -->
+            <div class="box-1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper  " data-aos="fade-up" data-aos-duration="3000">
+                        <div class="swiper-slide animate__shakeY">
+                            <img src="image/Sport Car/swipper/1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide animate__shakeY">
+                            <img src="image/Sport Car/swipper/2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/4.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/5.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/6.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/7.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/8.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/9.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Sport Car/swipper/10.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <h1><b>Sport Car</b></h1>
+                <p>រថយន្តស្ព័រ គឺជារថយន្តដែលរចនាឡើងដោយសង្កត់ធ្ងន់លើដំណើរការប្រកបដោយថាមពល ដូចជាការគ្រប់គ្រង
+                    ការបង្កើនល្បឿន ល្បឿនកំពូល ភាពរំភើបនៃការបើកបរ និងសមត្ថភាពប្រណាំង។
+                    រថយន្តស្ព័រមានដើមកំណើតនៅអឺរ៉ុបនៅដើមទសវត្សរ៍ឆ្នាំ 1910
+                    ហើយបច្ចុប្បន្នត្រូវបានផលិតដោយក្រុមហ៊ុនផលិតជាច្រើននៅជុំវិញពិភពលោក។</p>
+            </div>
+        </div>
+        <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <!-- Super Car -->
+            <div class="box-1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/4.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/5.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/6.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/7.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/8.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/9.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/SuperCar/10.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <h1><b>Super Car</b></h1>
+                <p>រថយន្តទំនើប ដែលគេស្គាល់ថាជារថយន្តកម្រ និងអសកម្ម
+                    គឺជាប្រភេទរថយន្តដែលជាទូទៅត្រូវបានពិពណ៌នាថាជារថយន្តស្ព័រដែលមានលក្ខណៈប្រណិត មានលក្ខណៈស្របច្បាប់
+                    ទាំងកម្លាំង ល្បឿន និងការគ្រប់គ្រង។ ដូច្នេះពាក្យ 'supercar'
+                    ត្រូវបានគេប្រើជាញឹកញាប់សម្រាប់រថយន្តស្ព័រដែលមានរាងកាយទាប។</p>
+            </div>
+        </div>
+    </div>
+    <div class="herobanner-1">
+        <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <!-- Luxury Car -->
+            <div class="box-1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/4.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/5.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/6.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/7.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/8.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/9.webp" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Luxury Car/10.webp" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <h1><b>Luxury car</b></h1>
+                <p> រថយន្តប្រណិតគឺជារថយន្តដែលផ្តល់នូវលើសពីមធ្យមទៅ
+                    កម្រិតខ្ពស់នៃការលួងលោម លក្ខណៈពិសេស និងឧបករណ៍។
+                    ជារឿយៗសម្ភារៈមានតម្លៃថ្លៃជាង និងការបញ្ចប់ផ្ទៃ
+                    បានប្រើ ហើយអ្នកទិញរំពឹងថាគុណភាពសំណង់កាន់តែប្រសើរ។</p>
+            </div>
+            <div class="color">
+
+            </div>
+        </div>
+        <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <!-- Pickup Car -->
+            <div class="box-1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/1.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/2.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/3.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/4.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/5.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/6.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/7.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/8.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/9.jpg" alt>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/pickup car/10.jpg" alt>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="introduce">
+                <h1><b>Pickup Car</b></h1>
+                <p>រថយន្តភីកអាប់គឺជារថយន្តដឹកទំនិញធុនស្រាល ឬធុនមធ្យមដែលមានកាប៊ីនបិទជិត
+                    ហើយផ្នែកខាងក្រោយធ្វើពីគ្រែដឹកទំនិញដែលត្រូវបានរុំព័ទ្ធដោយជញ្ជាំងទាបចំនួនបីដោយគ្មានដំបូល
+                    (ផ្នែកខាងក្រោយគ្រែដឹកទំនិញនេះជួនកាលមានកន្ទុយ និង គម្របដែលអាចដកចេញបាន) ។</p>
+            </div>
+        </div>
+    </div>
+    <div class="background-carimg"></div>
+    <div class="toyota-prius">
+        <h2>Toyota Prius</h2>
+    </div>
+    <hr>
+    <div class="prius-herobanner">
+        <img src="image/prius/herobanner.jpg" alt="">
+    </div>
+    <div class="main-cam-car">
+        <div class="popular_car_cam">
+            <h1>ប្រភេទឡានដែលពេញនិយមនៅប្រទេសកម្ពុជា</h1>
+            <h1>Toyota Prius</h1>
+        </div>
+        <div class="car-model">
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/prius_view.html"><img src="image/prius/1.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Toyota Prius 2024</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/prius_view.html"><img src="image/prius/2.png" alt=""></a>
+
+                </div>
+                <div class="model-name">
+                    <p>Toyota Prius 2024</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/prius_view.html"><img src="image/prius/3.png" alt=""></a>
+
+                </div>
+                <div class="model-name">
+                    <p>Toyota Prius 2020</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/prius_view.html"><img src="image/prius/4.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Toyota Prius 2018</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-360d ">
+            <a href="page/prius_view.html">view 360<i class="fa-solid fa-genderless"></i></a>
+        </div>
+        <div class="ruler" style="width:99%;height: 2px;background-color:black;margin: 10px ;"></div>
+        <div class="popular_car_cam">
+            <h1>Toyota Lexus</h1>
+        </div>
+        <div class="car-model">
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/luxes_view.html"> <img src="image/Luxus/1.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Lexus LX 570 2022</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/luxes_view.html"> <img src="image/Luxus/2 (2).png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Lexus LX 570 2022</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/luxes_view.html"> <img src="image/Luxus/2.png" alt=""></a>
+
+                </div>
+                <div class="model-name">
+                    <p>Lexus LX 570 2021</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/luxes_view.html"> <img src="image/Luxus/3.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Lexus LX570 2023 </p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-360d ">
+            <a href="page/luxes_view.html">view 360<i class="fa-solid fa-genderless"></i></a>
+        </div>
+        <div class="ruler" style="width:99%;height: 2px;background-color:black;margin: 10px ;"></div>
+        <div class="popular_car_cam">
+            <h1>General Motors (GM)</h1>
+        </div>
+        <div class="car-model">
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/escalade_view.html"><img src="image/Escalade/1.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Cadillac Escalade Sport</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/escalade_view.html"><img src="image/Escalade/2.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Cadillac Escalade 4WD 2024</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/escalade_view.html"><img src="image/Escalade/3.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Cadillac Escalade 4WD 2024</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/escalade_view.html"> <img src="image/Escalade/4.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Cadillac Escalade ESV Sport</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-360d ">
+            <a href="page/escalade_view.html">view 360<i class="fa-solid fa-genderless"></i></a>
+        </div>
+        <div class="ruler" style="width:99%;height: 2px;background-color:black;margin: 10px ;"></div>
+        <div class="popular_car_cam">
+            <h1>Hyundai</h1>
+        </div>
+        <div class="car-model">
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/hyundai_view.html"><img src="image/Hyundai/1.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Hyundai Tucson XRT 2020</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/hyundai_view.html"><img src="image/Hyundai/2.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Hyundai Tucson SEL 2019</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/hyundai_view.html"><img src="image/Hyundai/3.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Hyundai Tucson SEL 2024</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-prius" data-aos="zoom-in">
+                <div class="model-car">
+                    <a href="page/hyundai_view.html"> <img src="image/Hyundai/4.png" alt=""></a>
+                </div>
+                <div class="model-name">
+                    <p>Hyundai Kona Electric 2023</p>
+                    <div class="row-model-name">
+                        <div class="buy-now-icon">
+                            <span style="font-size: 15px;">SM Car</span> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="buy-now">
+                            <a href="page/result_finsih.html">ទិញឥឡូវ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view-360d ">
+            <a href="page/hyundai_view.html">view 360<i class="fa-solid fa-genderless"></i></a>
+        </div>
+        <div class="ruler" style="width:99%;height: 2px;background-color:black;margin: 10px ;"></div>
+        <div class="ruler" style="width:99%;height: 2px;margin: 10px ;"></div>
+    </div>
+    <div class="main-video">
+        <div class="performance">
+            <p>PERFORMANCE</p>
+        </div>
+        <div class="luxus">
+            <video id="nita" controls autoplay>
+                <source src="image/Luxus/video/Perform_video.mp4" type="video/mp4">
+                <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+
+            </video>
+            <marquee>
+                <p>
+                    សូមស្វាគមន៍មកកាន់​ <b style="color:gold;">SM Car Shop </b>អតិថិជនអាចទំនាក់ទំនងតាមរយៈលេខទូរស័ព្ទ:
+                    ០៩៦​ ២៦៧ ៩០៤ ២ /FB:Khet Chanmonita/IG:monita_khet/Gmail: khetchanmonita3@gmail.com សូមអរគុណ!
+
+                </p>
+            </marquee>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="shop-name">
+            <img src="image/img/logo.png" alt="">
+        </div>
+        <div class="container-footer">
+            <div class="inner-footer">
+                <p><span> About us <i class="fa-solid fa-address-card"></i></span><br></p><br>
+                <div class="information">
+                    <div class="information">
+                        <a href="page/Sport_Car.html"><i class="fa-solid fa-caret-right"></i> Sport Car</a>
+                        <br><br>
+                        <a href="page/Super_Car_Shop.html"><i class="fa-solid fa-caret-right"></i> Super Car</a>
+                        <br><br>
+                        <a href="page/Luxury_Car_Shop.html"><i class="fa-solid fa-caret-right"></i> Luxury Car</a>
+                        <br><br>
+                        <a href="page/Pickup_Car_Shop.html"><i class="fa-solid fa-caret-right"></i> Pickup Car</a>
+                        <br><br>
+                        <a href="page/SM_Car_Shop.html"><i class="fa-solid fa-caret-right"></i> Other Model</a>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-footer">
+                <p><span>Contact us <i class="fa-brands fa-facebook-messenger"></i></span></p>
+                <div class="information">
+                    <br>
+                    <a href="">FB Page : Khet Chanmonita <i class="fa-brands fa-facebook"></i><br><span>(FB
+                            Link)</span><br><u>https://www.facebook.com/monita <br>.khet.9?mibextid=ZbWKwL</u></a>
+                    <br><br>
+                    <a href="">IG Page : monita_khet <i class="fa-brands fa-instagram"></i></a>
+                    <br><br>
+                    <a href="">Telegram : Khet Chanmonita <i class="fa-brands fa-telegram"></i></a>
+                    <br><br>
+                    <a href="">Contact : 096 267 904 2 <i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="inner-footer">
+                <p><span>Address</span></p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.718605382324!2d104.88750717481736!3d11.572018988629287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1711359288670!5m2!1sen!2skh"
+                    width="250" height="200" style="border:0; margin-top: 10px;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="inner-footer">
+                <p><span>Model</span></p>
+                <div class="title-footer">
+                    <p><i class="fa-solid fa-check"></i> Toyota</p><br>
+                    <p><i class="fa-solid fa-check"></i> Ford</p><br>
+                    <p><i class="fa-solid fa-check"></i> Lambo</p><br>
+                    <p><i class="fa-solid fa-check"></i> BMW</p><br>
+                    <p><i class="fa-solid fa-check"></i> Tesla</p><br>
+                    <p><i class="fa-solid fa-check"></i> Mercedes</p><br>
+                    <p><i class="fa-solid fa-check"></i> Audi</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-buttom">
+        <p>
+            2024-2025 រក្សាសិទ្ធិដោយ:<b> SM Car Shop</b>
+        </p>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>
